@@ -1,0 +1,60 @@
+<!-- shadows in css -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+
+        }
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width:var(--custom-width);
+            height: 330px;
+            border: 3px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 100px 65px var(--primary-color); adding shadow (x,y,color) */
+            /* box-shadow: 10px 15px 50px brown; adding shadow and blur (x,y,blur,color) */
+            /* box-shadow: 10px 15px 5px 80px brown ; */
+            }
+        #head1{
+            
+             /* text-shadow:13px 13px 1px blue ; adding shadow in text (x,y,blur ,color) */
+             /* text-shadow: 12px 12px;
+              */
+              /* text-shadow: 12px 13px 1px red,13px 14px 1px yellow; */
+                color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.jpg" alt="image1" width="200px">
+            <h2  id="head1" >Welcome to CodeHelp</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, magni quam quisquam earum
+                doloremque reprehenderit soluta nesciunt ex reiciendis similique! Quam optio quod nihil magni.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
