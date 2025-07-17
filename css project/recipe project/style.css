@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    overflow-x: none;
+    /* background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% ); */
+/* background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% ); */
+/* background-image: linear-gradient( 90deg,  rgba(218,255,234,1) 5.3%, rgba(232,255,231,1) 11.6%, rgba(240,255,233,1) 17.4%, rgba(243,255,226,1) 22.9%, rgba(253,255,228,1) 28.5%, rgba(255,248,225,1) 33.9%, rgba(255,241,229,1) 39.4%, rgba(255,228,222,1) 44.8%, rgba(255,231,231,1) 50.3%, rgba(255,231,243,1) 56.9%, rgba(255,229,255,1) 63.2%, rgba(245,228,255,1) 69.1%, rgba(236,228,255,1) 74.7%, rgba(231,238,255,1) 80.4%, rgba(229,249,255,1) 85.8%, rgba(231,255,250,1) 90.6%, rgba(229,255,243,1) 94.4%, rgba(220,255,228,1) 98.3% ); */
+    background-image: radial-gradient( circle farthest-corner at 3.7% 49.8%,  rgba(143,232,255,1) 21.9%, rgba(209,243,251,1) 52.9% );
+    /* position: fixed; */
+
+}
+
+.navcontainer{
+    width: 100vw;
+    min-height: 80px;
+    background-color:rgb(132, 127, 236);   
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    
+background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+    
+}
+
+nav{
+    width: 100%;
+    padding: 15px;
+    overflow-x:none;
+}
+
+#navlist{
+
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left:15px;
+    margin-right: 15px; 
+    
+}
+
+#name{
+    font-size: 2.8rem;
+    color:azure;
+}
+
+a{
+    text-decoration: none;
+    /* border: 2px solid black; */
+    /* padding:0px 10px; */
+    /* border-radius: 25px; */
+    /* font-size: 30px; */
+
+    color:azure;
+
+
+}
+
+#navitem{
+    display: flex;
+    gap: 20px;
+    
+}
+.footerbox{
+    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+    background-color: rgb(126, 126, 245);
+    /* background-color: #0093E9; */
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    /* position: fixed; */
+}
+
+.footerbox p{
+    color: azure;
+    font-size:1.5rem;
+
+}
+
+
+.containerbox{
+    width: 50%;
+    margin: auto;
+    /* border:1px solid black; */
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    gap:100px;
+    padding:3rem;
+    
+    box-shadow: 0px 0px 30px black;
+    
+    
+
+  
+
+}
+.item{
+    display: flex;
+    gap: 50px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.4s linear 0s;
+    /* box-sizing: border-box; */
+    box-shadow: 1px 1px 10px black;
+}
+
+.rightbox img{
+    
+    transition: all 0.6s  linear 0s ;
+    
+
+}
+
+.rightbox:hover img{
+    transform: scale(1.1);
+    
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.ingbox{
+    
+    font-size: 1.4rem;
+
+}
+
+.recipebox{
+    font-size: 1.2rem;
+
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(71, 69, 69, 0.713);
+    border-radius: 20px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.rightbox .overlay span{
+    color: antiquewhite;
+    font-size: 1.2rem;
+}
+
+
+
+

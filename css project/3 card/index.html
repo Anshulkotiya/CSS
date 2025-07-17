@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 1000px;
+            height: 500px;
+            background-color: azure;
+            display: flex;
+        }
+        .leftbox{
+            width: 50%;
+            background-color: rgb(90, 29, 148);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            gap: 80px;
+            color:white;
+            
+        }
+        .rightbox{
+            width: 50%;
+            background-color: aquamarine;
+        }
+        .rightbox img{
+            width: 100%;
+            height: 100%;
+        }
+        .num{
+            width: 100%;
+            display: flex;
+            justify-content:space-between;
+            
+        }
+        #para{
+            font-size: 1.2rem;
+        }
+        .leftbox h1{
+            font-size: 2.2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="leftbox">
+                <div>
+                <h1>Get insights that help your bussiness grow</h1>
+                </div>
+                <div id="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempora doloremque nihil rem debitis quibusdam eveniet ut necessitatibus, officiis voluptate.</p>
+                </div>
+
+                <div class="num">
+                    <div>
+                    <h1>10K+</h1>
+                    <p>Comments</p>
+                    </div>
+
+                    <div>
+
+                    <h1>214</h1>
+                    <p>Paid User</p>
+                    </div>
+                    <div>
+
+                    <h1>12M+</h1>
+                    <p>Views</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="rightbox">
+                <img src="card.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

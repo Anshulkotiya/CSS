@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aquamarine;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 400px;
+            height: 650px;
+            background-color: azure;
+            padding: 0;
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px black;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            
+
+
+        }
+
+        .card img{
+            /* padding: 5%; */
+            width: 100%;
+            height:45%;
+            
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            gap:25px;
+            align-items: center;
+            width: 75%;
+            text-align: center;
+        }
+        .amountbox{
+            width: 80%;
+            height: 10%;
+            background-color:aqua;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+        #paymentbutton{
+            background-color: rgb(26, 26, 89);
+            width: 80%;
+            height: 9%;
+            color: azure;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgb(26, 26, 89 );
+            font-size:1.1em;
+        }
+        .cancelbox a{
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+            font-size: large;
+            
+        }
+        .imgbox{
+            width: 20%;
+            height:25%;
+            margin-left: 10px;
+
+        }
+        .leftbox{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .rightbox a{
+            margin: 15px;
+            font-size: 1.2rem;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="card.jpg" alt="image1">
+
+
+
+
+            <div class="textbox">
+            <h2>Order Summary</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="th.jpg" alt="">
+                        
+                       
+
+                    </div>
+                    <div id="textamountbox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+
+                    </div>
+
+                </div>
+                <div class="rightbox">
+                    <a href="#">change</a>
+                </div>
+                
+
+
+             </div>
+
+             <button id="paymentbutton">
+                Proceed to payment
+             </button>
+
+             <div class="cancelbox">
+                <a href="http://">cancel Order</a>
+             </div>
+         
+        </div>
+    </div>
+    
+</body>
+</html>

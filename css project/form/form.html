@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container of our form -->
+     <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="file.text">
+            <!-- full name -->
+             <label for="fullname">Student Name: </label>
+             <input id="fullname" type="text" name="fullname" placeholder="Enter your Full name">
+             
+             <!-- email -->
+             <label for="email">Email: </label>
+             <input type="email" id="email" name="email" placeholder="Enter your email" required>
+             
+             <!-- password -->
+             <label for="password">Password: </label>
+             <input type="password" id="password" name="password" placeholder="Enter your password" required>
+             
+             <!-- gender(radio) -->
+             <label for="Male">Gender: </label>
+             
+             <div class="radio-group">
+             <input type="radio" id="Male" name="Gender" value="Male" required><label for="Male">Male</label> 
+             <input type="radio" id="Female" name="Gender" value="Female"><label for="Female">Female</label> 
+             <input type="radio" id="Other" name="Gender" value="Other"><label for="Other">Other</label> 
+             </div>
+             
+             <!-- Date of Birth -->
+             <label for="dob">Date of Birth: </label>
+             <input type="date" id="dob" name="dob" required/>
+
+             <!-- course Selection -drop down -->
+              <label for="course">Select Course: </label>
+              <select name="course" id="course" required>
+                <option value="">--choose--</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">B.Sc</option>
+                <option value="ba">BA</option>
+                <option value="bcom">B.Com</option>
+              </select>
+
+              <!-- Hobbies -->
+               <label for="hobbies">Hobbies: </label>
+               <div class="checkbox-group">
+               <input type="checkbox" name="hobbies" value="reading" id="reading">
+               <label for="reading">Reading</label>
+               <input type="checkbox" name="hobbies" value="sport" id="sport">
+               <label for="sport">Sports</label>
+               <input type="checkbox" name="hobbies" value="music" id="music">
+               <label for="music">Music</label>
+               </div>
+
+               <!-- Upload photo -->
+                <label for="photo">Upload Photo: </label>
+                <input type="file" id="photo" name="photo">
+
+                <!-- address textbox -->
+                 <label for="address">Address: </label>
+                 <textarea name="address" id="address"
+                  placeholder="Enter yours address" 
+                  rows="3" required >
+
+                 </textarea>
+
+                  <!-- button -->
+                 <button type="submit">Submit</button>
+                 <button type="reset">clear</button>
+             
+
+
+
+
+        </form>
+     </div>
+
+    
+</body>
+</html>
